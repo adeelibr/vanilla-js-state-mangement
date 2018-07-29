@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vanilla State Management</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Done list</h1>
+      <p>A list of things that you have achieved today</p>
+      <p>
+        <b>Note:</b> The data isn't stored, so it will dissapear if you reload!</p>
+    </header>
+    <section>
+      <section>
+        <h2>What you've done</h2>
+        <div class="js-items" aria-live="polite" aria-label="A list of items you have done"></div>
+        <form class="js-form">
+          <label for="new-item-field">Add a new item</label>
+          <input type="text" id="new-item-field" autocomplete="off" />
+          <button>Save</button>
+        </form>
+      </section>
+      <aside>
+        <p role="status" class="visually-hidden">You have done
+          <span class="js-status">1 thing</span> today!</p>
+        <div class="js-count" aria-hidden="true">
+          <small>You've done</small>
+          <span>1</span>
+          <small>things today 😢</small>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+</body>
+
+</html>
